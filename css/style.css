@@ -2,7 +2,6 @@
 *{
     margin:0;
     padding:0;
-    overflow-x:hidden;
 }
 
 #page {
@@ -14,7 +13,7 @@
       "nav"
       "main"
       "foot";
-    grid-template-rows: 80px 80px auto 60px;
+    grid-template-rows: 80px 110px auto 60px;
     grid-template-columns: 1fr;
   }
   
@@ -25,7 +24,7 @@
   
   #page > nav {
     grid-area: nav;
-    background-color: #ffa08c;
+    background-color:rgb(65,7,108);
   }
   
   #page > main {
@@ -53,18 +52,31 @@
 
   main > .title{
     grid-area: title;
-    background-color: #a98cff;
-    height: 80px;
+    background-color: rgb(65,7,108);
+    height: 100px;
 
   }
   main > .balance{
     grid-area: balance;
-    background-color: #8ccfff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 2px;
+    background-color: rgb(65,7,108);
+    color: rgb(211, 204, 204);
 
+
+  }
+  main > .balance h6{
+    font-size: 16px;
+
+  }
+  main > .balance p{
+    padding:0px 10px;
   }
   main > .playing{
     grid-area: playing;
-    background-color: #f28cff;
+    background-color: rgb(65,7,108);
 
   }
   main > .search{
@@ -160,7 +172,7 @@ background-color:rgb(22,4,76);
   }
   
   /*Nav*/
-  /*#menu ul{
+  #menu ul{
     width: 16%;
     margin:0px;
     padding:0px;
@@ -168,7 +180,8 @@ background-color:rgb(22,4,76);
     position:absolute;
     left:86%;
     border-end-start-radius: 10%;
-    display:block;
+    display:flex;
+    align-items: stretch;
     z-index: 2;
 }
 #menu ul li{
@@ -176,7 +189,7 @@ background-color:rgb(22,4,76);
 }
 
 nav ul{
-    padding:3% 0%;
+    padding:3% 0% 5px 0px;
     display:flex;
     justify-content: space-evenly;
     margin-left:5%;
@@ -198,6 +211,26 @@ nav ul li a:hover{
     color: rgb(136, 130, 130);
 }
 
+/*Welcome*/
+main .welcome{
+    position:absolute;
+    left: 20%;
+    padding:12px 0px 0px 40px;
+    font-family: helvetica;
+    font-size: 26px;
+    font-weight:400;
+    z-index:2;
+    color: rgb(211, 204, 204);
+}
+main .under{
+    padding: 40px 0px 0px 90px;
+    font-family:helvetica;
+    margin-left: 400px;
+    font-weight: 400;
+    z-index:2;
+    color: rgb(211, 204, 204);
+}
+/*
 main{
     z-index:2;
     }
@@ -259,7 +292,6 @@ main{
     background-color:rgb(7, 196, 243);
 }
 
-/*
 main .welcome{
     position:absolute;
     left: 20%;
@@ -290,10 +322,11 @@ button:visited{
 There should be a program that allows only to be one item coloured at a time.
 }
 */ 
-/*
+
 main .playing{
     display:flex;
     justify-content: left;
+    align-items:center;
 }
 
 main .playing .contenedor-1{
@@ -306,6 +339,7 @@ main .playing .contenedor-1{
 main .playing .contenedor-2{
     height:177px;
     width:500px;
+    display: block;
 }
 
 main .playing .contenedor-2 .now{
@@ -320,12 +354,12 @@ main .playing .contenedor-2 .star{
     align-self: left;
 }
 
-
+/*
 main section .contenedor-3{
     height:177px;
     width:200px;
 }
-
+*/
 main section div .playing{
     height:59px;
     width:500px;
@@ -371,6 +405,7 @@ main .playing .contenedor-2 span .playingB{
     padding:0px 0px 0px 10px;
 }
 
+/*
 main .playing .search{
     display:flex;
     }

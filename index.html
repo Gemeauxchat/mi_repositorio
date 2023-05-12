@@ -33,11 +33,39 @@
                     </div>
                 </div>   
         </header>
-        <nav>Navigation</nav>
+        <nav>
+             <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="./pages/nosotros.html">Nosotros</a></li>
+            <li><a href="./pages/servicio.html">Servicio</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+        </ul>
+        <hr>
+        </nav>
         <main>
-            <section class="title">Title</section>
-            <Section class="balance">Balance</Section>
-            <section class="playing">Now playing</section>  
+            <section class="title">
+                <h1 class="welcome">Bienvenido a Needle</h1>
+                <h5 class="under">Experimenta la música</h5>
+            </section>
+            <Section class="balance">
+                <h6>Crédito</h6>
+                <p>0.00</p> <!--Función que actualice la página cuando se carga crédito-->
+            </Section>
+            <section class="playing">
+                <div class="contenedor-1">
+                    <iframe width="315" height="177" src="https://www.youtube.com/embed/8capWZmXtGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                    <div class="contenedor-2">
+                        Now playing:<!--This should be a code that references to the sog that is being played at the moment. It would be grat that the text has movement-->
+                        <div class="playing">
+                            <img class="star" src="./img/star-symbol-icon.svg" alt="Star">
+                            <span>
+                                <p class="playingA">Artista</p> <!--Esta línea debe conectarse a la Lista de Reproducción para determinar el Artista -->
+                                <p class="playingB">Reproduciendo</p><!--Esta línea debe conectarse a la Lista de Reproducción para determinar el nombre de la canción-->
+                            </span>
+                        </div>
+                    </div>
+            </section>  
             <section class="search">Search</section>
             <section class="results">results</section>
             <section class="selector">Selector</section>
