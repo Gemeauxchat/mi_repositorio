@@ -13,7 +13,7 @@
       "nav"
       "main"
       "foot";
-    grid-template-rows: 80px 110px 840px auto;
+    grid-template-rows: 80px 110px auto 60px;
     grid-template-columns: 1fr;
   }
   
@@ -463,7 +463,7 @@ main .search{
     "f-btn genero genero ."
     ". tag tag ."
     ;
-    grid-template-rows: 60% 10% auto;
+    grid-template-rows: 30% 10% auto;
 }
 main .search .textp{
     grid-area: textp;
@@ -503,7 +503,6 @@ main .search .f-btn{
 main .search .genero{
     grid-area: genero;
     height:20px;
-    z-index:1;
 
 }
 main .search .area{
@@ -535,9 +534,8 @@ main .playing .filter{
     border: 1px solid #ccc;
     border-radius: 10px;
     margin-right: 5px;
-    margin-top: 5px;
+    margin-top:5px;
     font-size: 14px;
-    z-index:2;
 
   }
   
@@ -552,9 +550,8 @@ main .results{
     grid-template-areas:
     "first-li first-li first-li first-li first-li"
     "flecha-l e1 e2 e3 flecha-r"
-    ". visor visor visor ."
     ;
-    grid-template-rows:55px auto 200px;
+    grid-template-rows:55px auto;
     grid-template-columns: 11% 26% 26% 26% 11%;
     background-color: rgb(65,7,108);
 }
@@ -593,17 +590,13 @@ main .results .flecha-l{
 }
 main .results .e1{
     grid-area:e1;
-    display:grid;
-    grid-template-areas:
-    "pic sel"
-    "song-id song-id"
-    ;
-    grid-template-rows:220px 40px;
-    grid-template-columns: 220px 10px; 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
 }
 
 main .results .e1 img, main .results .e2 img, main .results .e3 img{
-    grid-area: pic;
     width: 220px;
     height:220px;
       }
@@ -617,14 +610,14 @@ margin-left:10px;
 
 main .results .e2{
     grid-area:e2;
-    display:grid;
+    display:flex;
     justify-content:center;
     align-items:center;
 }
 
 main .results .e3{
     grid-area:e3;
-    display:grid;
+    display:flex;
     justify-content:center;
     align-items:center;
 }
@@ -638,18 +631,6 @@ main .results .flecha-r{
 .sright{
     width:35px;
     height:35px;
-}
-
-.visor{
-    grid-area:visor;
-    height:60px;
-    width: 760px;
-    display:flex;
-    justify-self:center;
-    background-color:snow;
-    border-style: solid;
-    border-radius: 10px;
-    margin-top:30px;
 }
 /*
 main .results .first-line-ml .tit{
@@ -832,15 +813,14 @@ width:300px;
     background-color:burlywood;
 }
 
-*/
-/*Selector*/
-main .selector{
+
+main .buy{
     margin-top:2%;
     display:flex;
     justify-content:space-around;
 }
 
-main .selector .numSelect{
+main .buy .numSelect{
     font-family:helvetica;
     font-size: medium;
     margin-top:2%;
@@ -848,25 +828,25 @@ main .selector .numSelect{
     justify-content: center;
 }
 
-main .selector div .toggle-selector{
+main .buy div .toggle-selector{
 width: 180px;
 display:flex;
 justify-content: space-evenly;
 align-items: center;
 }
 
-main .selector .numSelOpt{
+main .buy .numSelOpt{
     padding-left:5%;
     display:flex;
     justify-content: left;
     padding:2%;
 }
 
-main .selector .numSelOpt p{
+main .buy .numSelOpt p{
     padding:3% 2%;
 }
 
-main .selector button{
+main .buy button{
     margin-top:30%;
 }
 main .buy .play{
