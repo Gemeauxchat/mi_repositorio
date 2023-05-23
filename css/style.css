@@ -591,28 +591,67 @@ main .results .flecha-l{
     width:35px;
     height:35px;
 }
-main .results .e1{
+main .results .e1, main .results .e2, main .results .e3{
     grid-area:e1;
     display:grid;
     grid-template-areas:
-    "pic sel"
-    "song-id song-id"
+    "pic"
+    "song-id"
+    "artist-id"
+    "year"
+    "checkbox"
     ;
-    grid-template-rows:220px 40px;
-    grid-template-columns: 220px 10px; 
+    grid-template-rows:220px 30px 30px 30px 30px;
+    grid-template-columns: 220px; 
+    background-color:black;
+    width:220px;
+    justify-self: center;
+    border-radius:15px;
 }
 
 main .results .e1 img, main .results .e2 img, main .results .e3 img{
     grid-area: pic;
-    width: 220px;
-    height:220px;
+    box-sizing:border-box;
+    display:flex;
+    justify-self:center;
+    align-self: center;
+    width:195px;
+    height:195px;
+    display:flex;
       }
     
+main .results .e1 .song-id, main .results .e2 .song-id, main .results .e3 .song-id{
+    grid-area: song-id;
+    display: flex;
+    justify-content: left;
+    color:snow;
+    padding-left: 15px;
+}
 
+main .results .e1 .artist-id, main .results .e2 .artist-id, main .results .e3 .artist-id{
+    grid-area: artist-id;
+    display: flex;
+    justify-content: left;
+    color: snow;
+    padding-left: 15px;
+
+}
+
+main .results .e1 .year, main .results .e2 .year, main .results .e3 .year{
+    grid-area: year;
+    display: flex;
+    justify-content: left;
+    color: snow;
+    padding-left: 15px;
+
+}
 main .results .e1 input, main .results .e2 input, main .results .e3 input{
-justify-content: right;
-align-self: flex-end;
-margin-left:10px;
+grid-area: checkbox;
+display: flex;
+justify-self:right;
+margin:10px;
+width:15px;
+height:15px;
 }
 
 main .results .e2{
@@ -647,9 +686,14 @@ main .results .flecha-r{
     display:flex;
     justify-self:center;
     background-color:snow;
-    border-style: solid;
     border-radius: 10px;
     margin-top:30px;
+    border:none;
+}
+.visor div{
+    display:flex;
+    align-items: center;
+    padding-left: 15px;
 }
 /*
 main .results .first-line-ml .tit{
