@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <title>Needle</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body>
+   <!--Header-->
+   <header>
+    <section class="logo">
+        <div>
+            <img class="logo" src="../img/play-button-round-icon.svg" alt="Logo">
+        </div>
+        <div class="text">
+            Needle
+        </div>
+    </section>
+    <div>
+        <a href=""><img class="menu" src="../img/three-horizontal-lines-icon.svg" alt="menu"></a>
+    </div>
+</header>
+<!--Navigator-->
+    <nav>
+        <ul class="nav">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pages/nosotros.html">Nosotros</a></li>
+            <li><a href="../pages/servicio.html">Servicio</a></li>
+            <li><a href="../pages/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="welcome-name">Hola, Nombre</h1><!-- <h1>Hola, Nombre</h1> debería sincronizarse con el nombre de el usuario -->
+        <h5 class="subt">Experimenta la música</h5>
+        <p class="description">Parametrizá tu Rockola y conectá a tus clientes con su música favorita en cuatro simples pasos.</p>
+        <section class="steps">
+            <div class="stp">
+                1.<p>Seleccioná la localización de la carpeta donde guardas tu música.</p>
+                <div>   
+                <img class="icon" src="../img/folder-line-icon.svg" alt="icon">
+                </div> 
+            </div>
+            <div class="stp">
+                2.<p>Creá tus listas de reproducción y exportalas.</p>
+                <div>            
+                <img class="icon" src="../img/playlist-videos-icon.svg" alt="icon">
+                </div>  
+            </div>
+            <div class="stp">
+                3.<p>Agrega tu cuenta bancaria y fija el precio del servicio</p>
+                <div>              
+                <img class="icon" src="../img/bank-building-icon.svg" alt="icon">
+                </div>  
+            </div>
+            <div class="stp">
+                4.<p>Comparte tu código QR con tus clientes</p>
+                <div>            
+                <img class="icon" src="../img/qr-code-icon.svg" alt="icon">
+                </div>    
+            </div>
+        </section>
+        <section class="le">
+            <div>
+            <img id="le-icon" src="../img/edit-list-icon.svg" alt="edit-list">
+            </div>
+            <div>
+            Editor de lista de reproducción
+            </div>
+            <div>
+            <button>Nueva</button>
+            </div>
+            <div>
+            <button>Guardar</button>
+            </div>
+            <div>
+            <button>Cargar</button>
+            </div>
+            <div>
+            <img src="../img/document-export-icon.svg" alt="export">
+            </div>
+        </section>
+            <table ><!-- <table> La tabla debe estar conectada con la base de datos  -->
+                <thead>
+                    <tr>
+                        <th>Orden</th>
+                        <th>Ubicación</th>
+                        <th>Canción</th>
+                        <th>Banda</th>
+                        <th>Album</th>
+                        <th>Año</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Example</td>
+                    <td>El amor después del amor</td>
+                    <td>Fito Páez</td>
+                    <td>El amor después del amor</td>
+                    <td>1989</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+               </tr>
+            </table>
+        </section>
+        <section class="bank">
+            <div>
+            <img src="../img/bank-building-icon.svg" alt="logo">
+            </div>
+            <div>
+            No hay cuentas vinculadas<!-- No hay cuentas vinculadas  debe estar asociado a las cuentas vinculadas. Si hay una cuenta vinculada debería aparecer en vez de ese texto 'No hay cuentas vinculadas'-->
+            </div>
+       </section>
+       <h5 id="class-add">Agrega una cuenta bancaria y comienza a recibir pagos de tus clientes</h5>
+       <section class="add-ac">
+            <form action="">
+                <div>
+                <label for="">Banco</label>
+                <input type="text">
+                </div>
+                <div>
+                <label for="">Nombre del titular</label>
+                <input type="text">
+                </div>
+                <div>
+                <label for="">Apellido del titular</label>
+                <input type="text">
+                </div>
+                <div>
+                <label for="">CBU</label>
+                <input type="num">
+                </div>
+                <div>
+                <label for="">Moneda</label>
+                <select name="" id="">
+                    <option value="pesos">Pesos</option>
+                    <option value="dolar">Dolares</option>
+                </select>
+                </div>
+            </form> 
+            <div class="add">
+            <button>Agregar</button>
+            </div>
+        </section>   
+        </section>
+        <h5 class="precio">Precio</h5>
+        <section class="price-one">
+            <div>
+            Una canción
+            </div>
+            <div>
+            <select name="" id="">
+                <option value="pesos">Pesos</option>
+                <option value="dolar">Dólares</option>
+            </select>
+            </div>
+            <div>
+            <input type="num">
+            </div>
+            <div>
+            00.00
+            </div><!--El precio guardado debe verse en esta línea-->
+       </section>
+       <section class="price-two">
+            <div>
+            Dos canciones
+            </div>
+            <div>
+            <select name="" id="">
+                <option value="pesos">Pesos</option>
+                <option value="dolar">Dólares</option>
+            </select>
+            </div>
+            <div>
+            <input type="num">
+            </div>
+            <div>
+            00.00 <!--El precio guardado debe verse en esta línea-->
+            </div>
+        </section>
+            <div class="comision">
+            (40% de comisión Needle)
+            </div>
+            <div class="save-comision">
+            <button>Guardar</button>
+            </div>
+        </section>
+        <section class="qr">
+            <div>
+                <div>
+                <img src="../img/qr-code-icon.svg" alt="QR code">
+                </div>
+                <div class="text-qr">
+                <p>Imprime, descarga y comparte el código QR con tu comunidad</p>
+                </div>
+            </div>
+            <div>
+                <div class="icon-qr-ac">
+                <img src="../img/print-icon.svg" alt="Icon1">
+                </div>
+                <div class="icon-qr-ac">
+                <img src="../img/download-install-line-icon.svg" alt="icon2">
+                </div>
+                <div class="icon-qr-ac">
+                <img src="../img/share-square-line-icon.svg" alt="icon3">
+                </div>
+            </div>
+        </section>
+        <section  class="play-admin">
+            <div>
+            <img src="../img/play-button-icon.svg" alt="Play">
+            </div>
+            <div class="play-text">
+            Reproducir
+            </div>
+        </section>
+        
+        <!--
+        <section>
+            Selecciona tu canción            <input type="text" placeholder="Search..">
+            <select name="" id="">
+                <option value="song">Canción</option>
+                <option value="artist">Artista</option>
+                <option value="album">Album</option>
+            </select>
+                <button> <a href="./">Buscar</a></button>-->  <!--Clickear este botón debe activar la búsqueda entre las canciones disponibles-->
+         <!--  <a href=""><img src="./icon03.jpg" alt="Filter icon"></a>-->  <!--El link debe llevar a Activar y desactivar filtro. Tal vez sea otro el modo de lograr ese efecto-->
+       <!--<details>-->  <!--Filtro desplegable. Al seleccionar un filtro debe aparecer una etiqueta a la izquierda del buscador y activar filtrar los resultados en la sección de resultados-->  
+           <!-- <select name="" id="">
+                <option value="rock">Rock</option>
+                <option value="folk">Folk</option>
+                <option value="pop">Pop</option>
+                <option value="r&b">R&B</option>
+                <option value="trap">Trap</option>
+                <option value="hip-hop">Hip-Hop</option>
+                <option value="electronic">Electrónica</option>
+                <option value="metal">Metal</option>
+                <option value="reggae">Reggae</option>
+                <option value="latino">Latino</option>
+            </select>
+        </details>
+        <div>
+            <img src="" alt="Now Playing">
+                <div>
+                    <img src="" alt="Star">
+                    <p>Artista</p>--><!--Esta línea debe conectarse a la Lista de Reproducción para determinar el Artista -->
+               <!-- </div>
+                <p>Reproduciendo</p>--> <!--Esta línea debe conectarse a la Lista de Reproducción para determinar el nombre de la canción-->
+           <!--</div>
+        </section>--> 
+
+ <!--Now playing-video-->
+ <section class="playing">
+    <div class="contenedor-2">
+        <!--Now playing-Artist-Song--> 
+        <div class="playing">
+            <img class="star" src="../img/star-symbol-icon.svg" alt="Star">
+            <span>
+                <p class="playingA">Artista</p><!--Esta línea debe conectarse a la Lista de Reproducción para determinar el Artista -->
+                <p class="playingB">Reproduciendo</p><!--Esta línea debe conectarse a la Lista de Reproducción para determinar el nombre de la canción-->
+            </span>
+        </div>
+         <!--Song selector-->  
+        <div class="search">
+            <p>Selecciona tu canción</p>
+            <input type="text" placeholder="Search..">
+            <select name="" id="">
+                <option value="song">Canción</option>
+                <option value="artist">Artista</option>
+                <option value="album">Album</option>
+            </select>
+                <button> <a href="./">Buscar</a></button><!--Clickear este botón debe activar la búsqueda entre las canciones disponibles-->
+           <!-- </a>
+            <a href=""><img class="ftr" src="./img/filter-filtering-icon.svg" alt="Filter icon"></a> --><!--El link debe llevar a Activar y desactivar filtro. Tal vez sea otro el modo de lograr ese efecto-->
+        </div>
+        <!--Filter -Filtro desplegable. Al seleccionar un filtro debe aparecer una etiqueta a la izquierda del buscador y activar filtrar los resultados en la sección de resultados--> 
+        <div class="filter">
+            <img class="ftr" src="../img/filter-filtering-icon.svg" alt="Filter icon"></a><!--El link debe llevar a Activar y desactivar filtro. Tal vez sea otro el modo de lograr ese efecto-->
+            <details> 
+                    <select name="" id="">
+                       <option value="rock">Rock</option>
+                       <option value="folk">Folk</option>
+                       <option value="pop">Pop</option>
+                       <option value="r&b">R&B</option>
+                       <option value="trap">Trap</option>
+                       <option value="hip-hop">Hip-Hop</option>
+                       <option value="electronic">Electrónica</option>
+                       <option value="metal">Metal</option>
+                       <option value="reggae">Reggae</option>
+                       <option value="latino">Latino</option>
+                    </select>
+               </details>
+        </div>
+    </div>
+</section>
+
+        <section class="report">
+            <h5>Descargar reporte</h5>
+            <img src="../img/document-download-icon.svg" alt="export">
+        </section>
+
+    </main>
+
+</body>
+<footer>Buenos Aires, Argentina. Copyright®
+    <!--<p><a href="">EN</a><a href="">/ES</a></p>--> 
+ </footer>
+ </html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <title>Needle</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <section class="logo">
+            <div>
+                <img class="logo" src="../img/play-button-round-icon.svg" alt="Logo">
+            </div>
+            <div class="text">
+                Needle
+            </div>
+        </section>
+            <div>
+                <a href=""><img class="menu" src="../img/three-horizontal-lines-icon.svg" alt="menu"></a>
+            </div>
+    </header>
+<!--Navigator-->
+<nav id="menu">
+    <ul>
+        <li><a href="../pages/Ingreso.html">Ingresar</a></li>
+        <li><a href="../pages/Registrarse.html">Registrarse</a></li>
+    </ul>
+</nav>
+    <nav>
+        <ul class="nav">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pages/nosotros.html">Nosotros</a></li>
+            <li><a href="../pages/servicio.html">Servicio</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Contacto</h1>
+        <form action="process.php" method="post">
+            <div>
+                <label for="">Nombre</label>
+                <input class="name" type="text" name="firstName">
+            </div>
+            <div>
+                <label for="">Apellido</label>
+                <input class="last" type="text" name="lastName">
+            </div>
+            <div>
+                <label for="">Correo Electrónico</label>
+                <input class="email" type="email" name="email">
+            </div>
+            <div>
+                <label for="">Teléfono</label>
+                <input class="phone" type="num" name="phone">
+            </div>
+            <div>
+                <label for="">Mensaje</label>
+                <textarea name="message" id="">Escribe tu mensaje</textarea>
+            </div>
+        </form>
+    </main>
+</body>
+<footer>Buenos Aires, Argentina. Copyright®
+   <!--<p><a href="">EN</a><a href="">/ES</a></p>--> 
+</footer>
+</html>
